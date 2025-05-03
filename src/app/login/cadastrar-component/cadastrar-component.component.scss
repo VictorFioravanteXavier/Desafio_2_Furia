@@ -1,0 +1,151 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  main {
+    flex: 1;
+    background-color: var(--preto-2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box1 {
+      max-width: rem-calc(425);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      margin: 40px;
+
+      h1 {
+        font-size: rem-calc(36);
+        text-align: center;
+        color: var(--branco);
+      }
+
+      p {
+        font-size: rem-calc(18);
+        color: var(--cinza);
+      }
+
+      .box2 {
+        width: 100%;
+        padding: rem-calc(33);
+        border: 1px solid var(--cinza-translucido);
+        border-radius: rem-calc(12);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        form {
+          width: 100%;
+
+          div {
+            width: 100%;
+          }
+
+          label {
+            color: var(--cinza);
+          }
+
+          input {
+            background-color: transparent;
+            border: 1px solid var(--cinza-translucido);
+            color: var(--cinza);
+
+            &::placeholder {
+              color: var(--cinza-claro);
+            }
+          }
+
+          .uteis {
+            font-size: rem-calc(14);
+
+            a {
+              color: var(--amarelo);
+              margin-left: auto;
+              white-space: nowrap;
+
+              &:hover {
+                color: var(--amarelo-escuro);
+              }
+            }
+          }
+
+          button {
+            margin-top: rem-calc(20);
+            width: 100%;
+            background-color: var(--amarelo-escuro);
+
+            border: none;
+
+            color: var(--preto-2);
+            font-weight: bold;
+
+            &:hover {
+              background-color: var(--amarelo-escuro-2);
+
+            }
+          }
+        }
+
+        .line {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 10px;
+          color: var(--cinza);
+          margin-top: 20px;
+
+          span {
+            flex: 1;
+            height: 1px;
+            width: 100%;
+            background-color: var(--cinza-translucido);
+            display: block; // ESSENCIAL para altura funcionar
+          }
+
+          div {
+            white-space: nowrap;
+          }
+        }
+
+        .cadastrar{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+
+          p {
+            font-size: rem-calc(16);
+          }
+
+          .btn {
+            border: 1px solid var(--amarelo-escuro);
+            width: 100%;
+            color: var(--amarelo-escuro);
+            transition: ease 0.5s;
+            font-weight: bold;
+
+            &:hover {
+              background-color: var(--amarelo-escuro);
+
+              color: var(--preto-2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

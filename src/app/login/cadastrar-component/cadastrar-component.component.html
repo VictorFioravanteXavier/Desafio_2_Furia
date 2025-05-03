@@ -1,0 +1,56 @@
+<app-nav-bar></app-nav-bar>
+<main>
+  <div class="box1">
+    <h1>
+      Bem-vindo à Plataforma FURIA
+    </h1>
+    <p>
+      Gerencie e analise o engajamento dos seus fãs
+    </p>
+
+    <div class="box2">
+      <form action="">
+        <div class="mb-3">
+          <label for="nome-cadastar" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome-cadastar" placeholder="Alex">
+        </div>
+
+        <div class="mb-3">
+          <label for="sobrenome-cadastar" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome-cadastar" placeholder="Sousa">
+        </div>
+
+        <div class="mb-3">
+          <label for="email-cadastar" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email-cadastar" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="password-cadastar" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="password-cadastar">
+        </div>
+
+        <div class="mb-3">
+          <label for="passwordagain-cadastar" class="form-label">Repetir sua senha</label>
+          <input type="password" class="form-control" id="passwordagain-cadastar">
+        </div>
+
+        <button type="submit" class="btn">Cadastrar</button>
+      </form>
+
+      <div class="line">
+        <span></span>
+        <div>ou</div>
+        <span></span>
+      </div>
+
+      <div class="cadastrar">
+        <p>Já tem uma conta?</p>
+
+        <button type="submit" class="btn" (click)="goToLogin()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>

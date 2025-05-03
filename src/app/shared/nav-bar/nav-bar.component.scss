@@ -1,0 +1,23 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+
+:host{
+  .navbar{
+    background-color: var(--preto-2) !important;
+    padding: rem-calc(32) rem-calc(64);
+
+    border-bottom: 0.5px solid var(--cinza-translucido);
+
+    .navbar-brand{
+      font-size: rem-calc(30);
+      font-weight: bold;
+      color: var(--amarelo);
+
+      span {
+        font-size: rem-calc(16);
+        font-weight: normal;
+        color: var(--cinza);
+      }
+    }
+  }
+}

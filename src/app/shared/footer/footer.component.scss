@@ -1,0 +1,41 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+
+:host {
+  footer {
+    background-color: var(--preto-2) !important;
+    padding: rem-calc(32) rem-calc(64);
+
+    border-top: 0.5px solid var(--cinza-translucido);
+
+    display: flex ;
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: rem-calc(25);
+
+      a {
+        color: var(--cinza);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .sites {
+      margin-left: auto;
+      display: flex;
+
+      gap: 10px;
+
+      img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

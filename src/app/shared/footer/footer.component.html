@@ -1,0 +1,14 @@
+<footer>
+  <div class="links">
+    <a href="">Suporte</a>
+    <a href="">Contato</a>
+    <a href="">Termos de Uso</a>
+    <a href="">Política de Privacidade</a>
+  </div>
+
+  <div class="sites">
+    <a [href]="site.link" target="_blank"  *ngFor="let site of sites">
+      <img [src]="site.icon" [alt]="site.alt">
+    </a>
+  </div>
+</footer>

@@ -1,3 +1,12 @@
 @import './config-scss/rem-calc.scss';
 @import './config-scss/variables.scss';
 @import './config-scss/reset.scss';
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
