@@ -1,15 +1,22 @@
 @import '../../../config-scss/rem-calc.scss';
 @import '../../../config-scss/variables.scss';
 
-:host{
-  .navbar{
+:host {
+  .navbar {
     background-color: var(--preto-2) !important;
-    padding: rem-calc(32) rem-calc(64);
+    padding: rem-calc(8) rem-calc(16);
 
     border-bottom: 0.5px solid var(--cinza-translucido);
 
-    .navbar-brand{
-      font-size: rem-calc(30);
+    .container {
+      margin: 0 !important;
+      padding: 0 rem-calc(16);
+      width: 100%;
+      max-width: 100% !important; // <- isso é essencial
+      flex: 1;
+    }
+    .navbar-brand {
+      font-size: rem-calc(25);
       font-weight: bold;
       color: var(--amarelo);
 
@@ -17,6 +24,42 @@
         font-size: rem-calc(16);
         font-weight: normal;
         color: var(--cinza);
+      }
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--cinza-translucido);
+      padding: rem-calc(5);
+      gap: 5px;
+      border-radius: rem-calc(6);
+
+      input {
+        height: rem-calc(30);
+        color: var(--cinza-claro);
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background-color: transparent;
+
+        &::placeholder {
+          color: var(--cinza-claro);
+
+        }
+      }
+
+      label {
+        padding: 0px 5px;
+      }
+    }
+
+    .dropdown {
+      .dropdown-toggle {
+        &::after {
+          color: var(--cinza);
+        }
       }
     }
   }
