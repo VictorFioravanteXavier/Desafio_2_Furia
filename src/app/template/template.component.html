@@ -1,12 +1,17 @@
-<!-- template.component.html -->
 <div class="page-wrapper">
+  <!-- Header (NavBar) -->
+  <app-nav-bar></app-nav-bar> <!-- Colocando o nav-bar fora da sidebar -->
+
   <div class="page-body-wrapper">
-    <div class="page-sidebar">
-      <app-nav-bar></app-nav-bar>
-      <app-sidebar></app-sidebar>
+    <!-- Sidebar Fixa -->
+    <div class="sidebar-wrapper">
+      <app-sidebar></app-sidebar> <!-- Sidebar com conteúdo adicional -->
     </div>
+
+    <!-- Conteúdo da Página -->
     <div class="page-body">
-      <router-outlet></router-outlet>
+      <router-outlet></router-outlet> <!-- Aqui será o conteúdo da página -->
+      <app-footer></app-footer> <!-- Footer no final da página -->
     </div>
   </div>
 </div>
