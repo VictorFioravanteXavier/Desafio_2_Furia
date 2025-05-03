@@ -2,28 +2,46 @@
 @import '../../config-scss/variables.scss';
 
 :host {
-  display: flex;
-  flex-direction: column;
+  display: block;
   height: 100%;
 
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .navbar-wrapper {
+    flex-shrink: 0;
+  }
+
+  .page-body-wrapper {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+  }
 
   .sidebar-wrapper {
     width: rem-calc(280);
     background-color: #f4f4f4;
-    height: 100%;
-    position: fixed;
+    flex-shrink: 0;
   }
 
   .page-body {
-    margin-left: rem-calc(280);
-    flex-grow: 1;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+  }
+
+  router-outlet {
+    flex: 1;
   }
 
   footer {
-    position: relative;
     background-color: var(--preto-2) !important;
     padding: rem-calc(32) rem-calc(64);
     border-top: 0.5px solid var(--cinza-translucido);
+    flex-shrink: 0;
   }
 }

@@ -16,3 +16,16 @@ app-root {
   display: flex;
   flex-direction: column;
 }
+
+.btn-primario {
+  width: 100%;
+  background-color: var(--amarelo-escuro);
+
+  border: none;
+
+  color: var(--preto-2);
+
+  &:hover {
+    background-color: var(--amarelo-escuro-2);
+  }
+}
