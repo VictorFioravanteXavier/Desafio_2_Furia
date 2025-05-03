@@ -34,10 +34,6 @@
     overflow: auto;
   }
 
-  router-outlet {
-    flex: 1;
-  }
-
   footer {
     background-color: var(--preto-2) !important;
     padding: rem-calc(32) rem-calc(64);

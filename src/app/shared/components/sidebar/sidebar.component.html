@@ -1,10 +1,10 @@
 <div class="sidebar">
   <ul>
     <li>
-      <button class="menu-btn" [ngClass]="{ 'selected': currentUrl.includes('dashboard') }">Dashboard</button>
+      <button class="menu-btn" [ngClass]="{ 'selected': currentUrl.includes('dashboard') }" [routerLink]="['dashboard']">Dashboard</button>
     </li>
     <li>
-      <button class="menu-btn" [ngClass]="{ 'selected': currentUrl.includes('top-fan-posts') }">Top Fan Posts</button>
+      <button class="menu-btn" [ngClass]="{ 'selected': currentUrl.includes('top-fan-posts') }" [routerLink]="['top-fan-posts']">Top Fan Posts</button>
     </li>
     <li>
       <button class="menu-btn" [ngClass]="{ 'selected': currentUrl.includes('match-insights') }">Match Insights</button>

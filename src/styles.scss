@@ -29,3 +29,16 @@ app-root {
     background-color: var(--amarelo-escuro-2);
   }
 }
+
+.btn-secundario {
+  width: 100%;
+  background-color: transparent;
+
+  border: 1px solid var(--cinza-translucido-2);
+
+  color: var(--cinza-claro);
+
+  &:hover {
+    background-color: var(--cinza-translucido);
+  }
+}

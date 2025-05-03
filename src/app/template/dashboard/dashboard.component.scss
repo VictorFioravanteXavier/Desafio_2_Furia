@@ -30,6 +30,7 @@
       h1 {
         color: var(--cinza);
         font-size: rem-calc(24);
+        margin: 0;
       }
 
       .informations {
@@ -159,6 +160,8 @@
 
           td, tr, th {
             background-color: transparent;
+
+            border-bottom: 1px solid var(--cinza-translucido-2);
           }
 
           th {

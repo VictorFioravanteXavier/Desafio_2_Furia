@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,10 +9,18 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent implements OnInit {
 
-  currentUrl = this.router.url;
+  public currentUrl: string = '';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
+    this.currentUrl = this.router.url;
+
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe((event) => {
+        const navEndEvent = event as NavigationEnd;
+        this.currentUrl = navEndEvent.urlAfterRedirects;
+      });
   }
 }
