@@ -1,27 +1,56 @@
 # Desafio2Furia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+## Descrição do Projeto
+Desafio2Furia é uma aplicação web desenvolvida com Angular que possui um sistema de login de usuários, um painel administrativo com análises e um feed de conteúdo para usuários. A plataforma inclui registro de usuários, uma área administrativa com insights de partidas e postagens dos principais fãs, e uma área de usuário com postagens recomendadas.
 
-## Development server
+## Funcionalidades
+- Autenticação de usuários com login e registro
+- Painel administrativo com:
+  - Análises de insights de partidas
+  - Visão geral das postagens dos principais fãs
+- Área do usuário com:
+  - Página inicial
+  - Feed de postagens recomendadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalação e Configuração
+1. Clone o repositório
+2. Navegue até o diretório do projeto
+3. Instale as dependências:
 
-## Code scaffolding
+``` 
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. Execute o servidor de desenvolvimento:
+```
+ng serve
+```
+5. Abra o navegador e acesse ```http://localhost:4200```
 
-## Build
+## Estrutura do Projeto
+- ```src/app/login/```: Módulos e componentes de login e registro
+- ```src/app/template/admin-template/```: Componentes do painel administrativo incluindo insights de partidas e postagens dos principais fãs
+- ```src/app/user-template/```: Componentes da área do usuário incluindo a página inicial e postagens recomendadas
+- ```src/app/shared/```: Módulos e componentes compartilhados utilizados em toda a aplicação
+- ```src/environments/```: Arquivos de configuração de ambiente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Executando, Compilando e Testando
+- Para rodar a aplicação localmente:
+```ng serve```
 
-## Running unit tests
+- Para compilar a aplicação para produção:
+```ng build --prod```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Para executar os testes:
+```ng test```
 
-## Running end-to-end tests
+## Configuração de Ambiente
+- Os arquivos de ambiente estão localizados em ```src/environments/```
+- Configure os endpoints de API e outras configurações específicas do ambiente aqui
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Dependências
+- Framework Angular
+- Bootstrap 5 para estilização
+- Outras dependências listadas no arquivo ```package.json```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este README fornece uma visão geral e instruções para começar a trabalhar com o projeto Desafio2Furia.
