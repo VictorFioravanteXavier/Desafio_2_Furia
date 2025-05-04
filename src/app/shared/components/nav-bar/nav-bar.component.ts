@@ -15,7 +15,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     const currentUrl = this.router.url;
 
-    if (!currentUrl.includes('app')) {
+    if (!currentUrl.includes('admin')) {
       this.loginScreen = true;
     } else {
       this.loginScreen = false;

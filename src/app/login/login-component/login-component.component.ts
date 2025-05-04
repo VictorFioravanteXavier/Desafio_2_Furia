@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login-component',
   templateUrl: './login-component.component.html',
@@ -7,17 +8,26 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class LoginComponentComponent implements OnInit {
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
+  email: string = '';
+  senha: string = '';
 
-  ngOnInit(): void {
-  }
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {}
 
   goToCadastro() {
     this.router.navigate(['/cadastro']);
   }
 
   Login() {
-    sessionStorage.setItem("token", 'teste');
-    this.router.navigate(['app/dashboard'])
+    if (this.email === 'admin@furia.com' && this.senha === '123') {
+      sessionStorage.setItem('token', 'admin');
+      this.router.navigate(['/admin']);
+    } else if (this.email === 'user@furia.com' && this.senha === '123') {
+      sessionStorage.setItem('token', 'user');
+      this.router.navigate(['/user']);
+    } else {
+      alert('Login inválido!');
+    }
   }
 }

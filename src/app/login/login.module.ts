@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 // Components
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { CadastrarComponentComponent } from './cadastrar-component/cadastrar-component.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CadastrarComponentComponent } from './cadastrar-component/cadastrar-com
   imports: [
     CommonModule,
     LoginRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class LoginModule { }
