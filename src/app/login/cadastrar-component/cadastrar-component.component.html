@@ -1,15 +1,12 @@
 <app-nav-bar></app-nav-bar>
 <main>
   <div class="box1">
-    <h1>
-      Bem-vindo à Plataforma FURIA
-    </h1>
-    <p>
-      Gerencie e analise o engajamento dos seus fãs
-    </p>
+    <h1>Bem-vindo à Plataforma FURIA</h1>
+    <p>Gerencie e analise o engajamento dos seus fãs</p>
 
     <div class="box2">
       <form action="">
+        <!-- DADOS BÁSICOS -->
         <div class="mb-3">
           <label for="nome-cadastar" class="form-label">Nome</label>
           <input type="text" class="form-control" id="nome-cadastar" placeholder="Alex">
@@ -26,6 +23,16 @@
         </div>
 
         <div class="mb-3">
+          <label for="cpf-cadastar" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf-cadastar" placeholder="000.000.000-00">
+        </div>
+
+        <div class="mb-3">
+          <label for="endereco-cadastar" class="form-label">Endereço Completo</label>
+          <input type="text" class="form-control" id="endereco-cadastar" placeholder="Rua, Número, Cidade, Estado">
+        </div>
+
+        <div class="mb-3">
           <label for="password-cadastar" class="form-label">Senha</label>
           <input type="password" class="form-control" id="password-cadastar">
         </div>
@@ -33,6 +40,17 @@
         <div class="mb-3">
           <label for="passwordagain-cadastar" class="form-label">Repetir sua senha</label>
           <input type="password" class="form-control" id="passwordagain-cadastar">
+        </div>
+
+        <!-- UPLOAD DOCUMENTOS -->
+        <div class="mb-3">
+          <label for="documento-cadastar" class="form-label">Upload de documento de identificação (RG, CNH, etc.)</label>
+          <input type="file" class="form-control" id="documento-cadastar" accept=".pdf,.jpg,.png">
+        </div>
+
+        <!-- VALIDAÇÃO VIA AI (placeholder) -->
+        <div class="mb-3">
+          <p class="text-muted">Validação de identidade por IA será realizada após envio dos dados.</p>
         </div>
 
         <button type="submit" class="btn btn-primario">Cadastrar</button>
@@ -46,11 +64,9 @@
 
       <div class="cadastrar">
         <p>Já tem uma conta?</p>
-
-        <button type="submit" class="btn" (click)="goToLogin()">Entrar</button>
+        <button type="button" class="btn" (click)="goToLogin()">Entrar</button>
       </div>
     </div>
   </div>
 </main>
-
 <app-footer></app-footer>

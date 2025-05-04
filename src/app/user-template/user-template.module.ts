@@ -7,13 +7,15 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { RecomendedPostsComponent } from './recomended-posts/recomended-posts.component';
 import { RouterModule } from '@angular/router';
+import { PersonalizeExperienceComponent } from './personalize-experience/personalize-experience.component';
 
 
 @NgModule({
   declarations: [
     UserTemplateComponent,
     HomeComponent,
-    RecomendedPostsComponent
+    RecomendedPostsComponent,
+    PersonalizeExperienceComponent
   ],
   imports: [
     CommonModule,

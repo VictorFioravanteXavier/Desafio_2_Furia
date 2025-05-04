@@ -1,0 +1,245 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+
+:host {
+  .box {
+    height: 100%;
+    background-color: var(--preto-2);
+    padding: rem-calc(16) rem-calc(32);
+    color: var(--cinza);
+
+    display: flex;
+    flex-direction: column;
+    gap: rem-calc(40);
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .box-title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+      h2 {
+        font-weight: bold;
+        font-size: rem-calc(32);
+        color: var(--amarelo);
+      }
+
+      p {
+        font-size: rem-calc(18);
+      }
+    }
+
+
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--cinza-translucido-2);
+      padding: rem-calc(20);
+      border-radius: rem-calc(12);
+      width: 24%;
+      gap: rem-calc(20);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .box-1 {
+      display: flex;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+
+      .box-1-title {
+        h3 {
+          font-weight: 500;
+          font-size: rem-calc(24);
+          color: var(--amarelo);
+        }
+      }
+
+      .box-1-content {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: rem-calc(16);
+
+        .box-1-option {
+          width: 31%;
+
+          .box-container {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid var(--cinza-translucido-2);
+            padding: rem-calc(32);
+          }
+        }
+      }
+    }
+
+    .box-2 {
+      display: flex;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+
+      .box-2-title {
+        h3 {
+          font-weight: 500;
+          font-size: rem-calc(24);
+          color: var(--amarelo);
+        }
+      }
+
+      .box-2-content {
+        display: flex;
+        flex-direction: column;
+        gap: rem-calc(32);
+
+        .box-2-option {
+
+          display: flex;
+          flex-direction: column;
+          gap: rem-calc(16);
+
+          .progress-bar {
+            width: 100%;
+            height: rem-calc(8);
+            background-color: var(--cinza-translucido);
+            border-radius: 10px;
+            position: relative;
+            overflow: visible;
+
+            .circle {
+              width: 20px;
+              height: 20px;
+              background-color: var(--amarelo);
+              position: absolute;
+              border-radius: 50%;
+              top: 50%;
+              left: 0%; // ou onde o ponto de progresso deve aparecer
+              transform: translate(-50%, -50%);
+              z-index: 2; // <- garante que fique acima da barra
+            }
+
+            .progress {
+              height: 100%;
+              width: 0%;
+              background-color: var(--amarelo);
+              transition: width 0.3s ease;
+              z-index: 1;
+              position: relative;
+            }
+
+          }
+        }
+      }
+    }
+
+    .box-3 {
+      display: flex;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+
+      .box-3-title {
+        h3 {
+          font-weight: 500;
+          font-size: rem-calc(24);
+          color: var(--amarelo);
+        }
+      }
+
+
+      .box-3-content {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: rem-calc(16);
+
+        .box-3-option {
+          width: 31%;
+
+          .box-container {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid var(--cinza-translucido-2);
+            flex-direction: row;
+
+
+            .quadrado {
+              background-color: transparent;
+              border: 1px solid var(--amarelo);
+              width: 20px;
+              height: 20px;
+              border-radius: rem-calc(4);
+            }
+          }
+        }
+      }
+    }
+
+    .box-4 {
+      display: flex;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+
+      .box-4-title {
+        h3 {
+          font-weight: 500;
+          font-size: rem-calc(24);
+          color: var(--amarelo);
+        }
+      }
+
+
+      .box-4-content {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem-calc(16);
+
+        .box-4-option {
+          width: fit-content;
+
+          .box-container {
+            width: 100%;
+            border-radius: 50px;
+            gap: rem-calc(8);
+            background-color: transparent;
+            border: 1px solid var(--cinza-translucido-2);
+            flex-direction: row;
+            padding: rem-calc(14);
+          }
+        }
+      }
+    }
+
+    .box-5{
+      margin: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+      button {
+        width: fit-content;
+        padding: rem-calc(16);
+        font-size: rem-calc(18);
+        font-weight: bold;
+      }
+    }
+  }
+}
