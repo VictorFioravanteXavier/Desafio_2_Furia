@@ -1,0 +1,214 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+
+:host {
+
+  .box {
+    height: 100%;
+    background-color: var(--preto-2);
+    padding: rem-calc(16) rem-calc(32);
+    color: var(--cinza);
+
+    display: flex;
+    flex-direction: column;
+    gap: rem-calc(40);
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .box-title {
+      h2 {
+        font-weight: bold;
+        font-size: rem-calc(32);
+      }
+    }
+
+
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--cinza-translucido-2);
+      padding: rem-calc(20);
+      border-radius: rem-calc(12);
+      width: 24%;
+      gap: rem-calc(20);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .box-1 {
+      display: flex;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+
+      .box-1-title {
+        h3 {
+          font-weight: bold;
+          font-size: rem-calc(24);
+          color: var(--cinza);
+        }
+      }
+
+      .posts {
+        display: flex;
+        align-items: center;
+        gap: rem-calc(16)
+      }
+
+      .box-container {
+        width: 20%;
+        padding: 0;
+        gap: 0;
+
+        .box-1-content {
+          padding: rem-calc(16);
+
+
+          .post {
+
+            display: flex;
+            flex-direction: column;
+            gap: rem-calc(16);
+
+            .post-type {
+              color: var(--amarelo);
+              font-size: rem-calc(14);
+            }
+
+            .actions {
+              display: flex;
+              align-content: center;
+              justify-content: space-between;
+
+              span {
+                font-size: rem-calc(12);
+              }
+
+              .actions-1 {
+                display: flex;
+                gap: rem-calc(16);
+                align-items: center;
+
+                div {
+                  display: flex;
+                  align-items: center;
+                  gap: rem-calc(4);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    .box-2 {
+      display: flex;
+      flex-direction: column;
+      gap: rem-calc(16);
+
+      .box-2-title {
+        h3 {
+          font-weight: bold;
+          font-size: rem-calc(24);
+          color: var(--cinza);
+        }
+      }
+
+      .box-2-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+        row-gap: rem-calc(20);
+
+        .box-container {
+          width: 32%;
+          padding: 0;
+          overflow: hidden;
+          gap: 0;
+
+          .img {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .informations-box-3 {
+            margin: rem-calc(20);
+            display: flex;
+            flex-direction: column;
+            gap: rem-calc(20);
+
+            .user-informations {
+              display: flex;
+              gap: rem-calc(10);
+              align-items: center;
+
+              .user-data {
+                display: flex;
+                flex-direction: column;
+                gap: rem-calc(5);
+
+                .user-time {
+                  font-size: rem-calc(14);
+                  color: var(--cinza-translucido);
+                }
+              }
+            }
+
+            .post-informations {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .likes-shares {
+                display: flex;
+                align-items: center;
+                gap: rem-calc(20);
+
+                .data {
+                  display: flex;
+                  align-items: center;
+                  gap: rem-calc(5);
+                }
+              }
+
+              .viral-post {
+                width: rem-calc(10);
+                height: rem-calc(10);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .circle {
+                  width: 5px;
+                  height: 5px;
+
+                  border-radius: 50%;
+
+                  &.verde {
+                    background-color: var(--verde);
+                  }
+
+                  &.amarelo {
+                    background-color: var(--amarelo);
+                  }
+
+                  &.vermelho {
+                    background-color: var(--vermelho);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
