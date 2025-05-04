@@ -15,10 +15,10 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     const currentUrl = this.router.url;
 
-    if (!currentUrl.includes('admin')) {
-      this.loginScreen = true;
-    } else {
+    if (!currentUrl.includes('admin') || !currentUrl.includes('user')) {
       this.loginScreen = false;
+    } else {
+      this.loginScreen = true;
     }
   }
 
