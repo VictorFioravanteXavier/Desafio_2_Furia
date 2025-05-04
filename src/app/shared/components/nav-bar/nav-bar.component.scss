@@ -15,10 +15,22 @@
       max-width: 100% !important; // <- isso é essencial
       flex: 1;
     }
+
     .navbar-brand {
       font-size: rem-calc(25);
       font-weight: bold;
       color: var(--amarelo);
+
+      .logo {
+        padding: rem-calc(7.5);
+        background-color: var(--amarelo);
+        border-radius: rem-calc(8);
+        margin-right: rem-calc(10);
+        img {
+          width: rem-calc(25);
+
+        }
+      }
 
       span {
         font-size: rem-calc(16);
