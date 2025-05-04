@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'app',
-    loadChildren: () => import('./template/template.module').then((t) => t.TemplateModule),
+    loadChildren: () => import('./template/template.module').then((t) => t.AdminTemplateModule),
     canActivateChild: [AuthGuard]
   }
 ];
