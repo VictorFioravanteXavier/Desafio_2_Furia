@@ -78,12 +78,7 @@
           display: flex;
           gap: rem-calc(15);
 
-          select {
-            width: auto;
-            background-color: transparent;
-            border: 1px solid var(--cinza-translucido-2);
-            color: var(--cinza-claro);
-          }
+          
         }
       }
     }

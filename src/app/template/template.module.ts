@@ -6,13 +6,15 @@ import { TemplateComponent } from './template.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { TopFansPostsComponent } from './top-fans-posts/top-fans-posts.component';
+import { MatchInsightsComponent } from './match-insights/match-insights.component';
 
 
 @NgModule({
   declarations: [
     TemplateComponent,
     DashboardComponent,
-    TopFansPostsComponent
+    TopFansPostsComponent,
+    MatchInsightsComponent
   ],
   imports: [
     CommonModule,

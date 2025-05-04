@@ -1,0 +1,216 @@
+@import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/variables.scss';
+
+:host {
+  p {
+    margin: 0;
+  }
+
+  .box {
+    height: 100%;
+    background-color: var(--preto-2);
+    padding: rem-calc(16) rem-calc(32);
+
+    display: flex;
+    flex-direction: column;
+    gap: rem-calc(40);
+
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--cinza-translucido-2);
+      padding: rem-calc(20);
+      border-radius: rem-calc(12);
+      gap: rem-calc(20);
+
+      h2 {
+        font-size: rem-calc(16);
+        color: var(--cinza);
+        margin: 0;
+        white-space: nowrap;
+        width: auto;
+      }
+
+      .number {
+        font-size: rem-calc(30);
+        color: var(--amarelo);
+        font-weight: bold;
+      }
+
+      .porcentagem {
+        font-size: rem-calc(14);
+        color: var(--verde);
+      }
+    }
+
+    .box-1 {
+      .box-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .partida {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          gap: rem-calc(16);
+
+          .times {
+            font-size: rem-calc(16);
+            color: var(--amarelo);
+          }
+
+          .camp{
+            color: var(--cinza);
+            font-size: rem-calc(14);
+          }
+        }
+
+        .select {
+          width: fit-content;
+        }
+      }
+    }
+
+    .box-2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .box-container {
+        width: 24%;
+        p {
+          margin: 0;
+        }
+
+        .box-title {
+          display: flex;
+          align-items: center;
+          gap: rem-calc(10);
+
+          h2 {
+            font-size: rem-calc(16);
+            color: var(--cinza);
+            margin: 0;
+            white-space: nowrap;
+
+          }
+        }
+
+        .informations-box-2 {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+
+          .number {
+            font-size: rem-calc(30);
+            color: var(--amarelo);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .box-4 {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+
+      .box-container {
+        width: 49%;
+        height: auto;
+
+        img {
+          align-self: baseline;
+        }
+
+        .box-title {
+          display: flex;
+          align-items: center;
+          gap: rem-calc(10);
+
+          h2 {
+            font-size: rem-calc(16);
+            color: var(--cinza);
+            margin: 0;
+            white-space: nowrap;
+
+          }
+        }
+
+        .informations-box-2 {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+
+          .number {
+            font-size: rem-calc(30);
+            color: var(--amarelo);
+            font-weight: bold;
+          }
+        }
+
+        .abount {
+          display: flex;
+          justify-content: space-evenly;
+
+          .abount-item {
+            display: flex;
+            align-items: center;
+            gap: rem-calc(10);
+
+            .circle {
+              height: 10px;
+              width: 10px;
+
+              border-radius: 50%;
+
+              &.positive{
+                background-color: var(--amarelo);
+              }
+
+              &.neutral{
+                background-color: var(--cinza);
+              }
+
+              &.negative{
+                background-color: var(--vermelho);
+              }
+            }
+
+            p {
+              color: var(--cinza);
+
+             span {
+                color: var(--cinza);
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .box-5 {
+      .box-container {
+        .insights {
+          display: flex;
+          align-items: center;
+          gap: rem-calc(20);
+
+          h3 {
+            color: var(--cinza);
+            margin: 0;
+            font-size: rem-calc(16);
+          }
+
+          p {
+            color: var(--cinza);
+            font-size: rem-calc(14);
+
+          }
+        }
+      }
+    }
+  }
+}
