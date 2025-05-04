@@ -27,6 +27,19 @@ ng serve
 ```
 5. Abra o navegador e acesse ```http://localhost:4200```
 
+## Como Usar o Projeto
+A página de login suporta dois tipos de usuários com as seguintes credenciais:
+
+- Usuário Admin:
+  - Email: admin@furia.com
+  - Senha: 123
+  - Acessa o painel administrativo em ```/admin```
+
+- Usuário Comum:
+  - Email: user@furia.com
+  - Senha: 123
+  - Acessa a área do usuário em ```/user```
+
 ## Estrutura do Projeto
 - ```src/app/login/```: Módulos e componentes de login e registro
 - ```src/app/template/admin-template/```: Componentes do painel administrativo incluindo insights de partidas e postagens dos principais fãs
